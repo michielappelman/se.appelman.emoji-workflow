@@ -30,4 +30,4 @@ for emoji_name, emoji_description in emoji_json.items():
             subtitle = SubElement(item, 'subtitle')
             subtitle.text = "Paste \'{}\'  at cursor.".format(emoji_name)
 
-print(tostring(top, encoding="unicode"))
+print(tostring(top, encoding="utf8"))
