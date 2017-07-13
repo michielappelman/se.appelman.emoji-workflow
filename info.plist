@@ -56,7 +56,7 @@
 				<key>runningsubtext</key>
 				<string>Searching for emoji...</string>
 				<key>script</key>
-				<string>/Users/michiel/.pyenv/shims/python emoji-search.py "{query}"</string>
+				<string>python emoji-search.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
