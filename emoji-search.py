@@ -17,7 +17,7 @@ top = Element('items')
 for emoji_name, emoji_description in emoji_json.items():
     if len(list(top)) > 24:
         continue
-    if search_term in emoji_name:
+    if search_term in emoji_name and emoji_description['char']:
         item = SubElement(top, 'item', {'uid': emoji_name, 'arg': emoji_description['char']})
         icon = SubElement(item, 'icon')
         icon.text = 'icon.png'
@@ -26,7 +26,7 @@ for emoji_name, emoji_description in emoji_json.items():
         subtitle = SubElement(item, 'subtitle')
         subtitle.text = "Paste \'{}\'  at cursor.".format(emoji_name)
     for keyword in emoji_description['keywords']:
-        if search_term in keyword:
+        if search_term in keyword and emoji_description['char']:
             item = SubElement(top, 'item', {'uid': emoji_name, 'arg': emoji_description['char']})
             icon = SubElement(item, 'icon')
             icon.text = 'icon.png'
