@@ -1,4 +1,6 @@
-# Emoji Workflow for Alfred 2
+# Emoji Workflow for Alfred 3
+
+Tested on Alfred 3, please let me know if it also works on Alfred 2.
 
 To install: `git clone` in your `Alfred.alfredpreferences/workflows/` directory.
 
